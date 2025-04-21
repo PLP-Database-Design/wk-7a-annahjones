@@ -16,7 +16,16 @@ VALUES
 (102, 'Jane Smith', 'Mouse'),
 (103, 'Emily Clark', 'Phone');
 
+--OUTPUT--
+OrderID | CustomerName | Product
+101 | John Doe | Laptop
+101 | John Doe | Mouse
+102 | Jane Smith | Tablet
+102 | Jane Smith | Keyboard
+102 | Jane Smith | Mouse
+103 | Emily Clark | Phone
 
+    
 -- Create Orders table (OrderID -> CustomerName)
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
@@ -30,15 +39,7 @@ VALUES
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
---OUTPUT--
-OrderID | CustomerName | Product
-101 | John Doe | Laptop
-101 | John Doe | Mouse
-102 | Jane Smith | Tablet
-102 | Jane Smith | Keyboard
-102 | Jane Smith | Mouse
-103 | Emily Clark | Phone
-    
+--OUTPUT--   
 OrderID | CustomerName
 101 | John Doe
 102 | Jane Smith
